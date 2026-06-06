@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Botanique 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 50px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 40px;
+        }
+
+        .links-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .link-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .link-card i {
+            font-size: 1.8em;
+        }
+
+        .link-card-title {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .link-card-description {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .links-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Welcome to Botanique 6</h1>
+        <p class="subtitle">Your community hub for calendars, events, and connections</p>
+
+        <div class="links-section">
+            <a href="#calendars" class="link-card" onclick="alert('Calendar link placeholder - Update with your calendar URL')">
+                <div class="emoji">📅</div>
+                <div class="link-card-title">Calendars</div>
+                <div class="link-card-description">View upcoming events</div>
+            </a>
+
+            <a href="#whatsapp" class="link-card" onclick="alert('WhatsApp group link placeholder - Update with your WhatsApp group link')">
+                <div class="emoji">💬</div>
+                <div class="link-card-title">WhatsApp Groups</div>
+                <div class="link-card-description">Join our community chat</div>
+            </a>
+
+            <a href="#events" class="link-card" onclick="alert('Events link placeholder - Update with your events page')">
+                <div class="emoji">🎉</div>
+                <div class="link-card-title">Events</div>
+                <div class="link-card-description">Discover what's happening</div>
+            </a>
+
+            <a href="#more" class="link-card" onclick="alert('More links placeholder - Add additional links')">
+                <div class="emoji">🔗</div>
+                <div class="link-card-title">More Links</div>
+                <div class="link-card-description">Additional resources</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
